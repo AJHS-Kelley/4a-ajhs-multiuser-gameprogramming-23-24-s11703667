@@ -38,6 +38,7 @@ namespace numberGuess
             int numGuesses = 0; // Number of Guesses player is ALLOWED.
             int numAttempts = 0; // Number of guesses TAKEN.
             int playerScore = 0;
+            int playerGuess = 0;
             int cpuScore = 0;
             string difficulty = "";
             int rangeMin = -1;
@@ -65,7 +66,28 @@ namespace numberGuess
         } 
         Console.WriteLine("Minimum: " + rangeMin);
         Console.WriteLine("Maxium: " + rangeMax);
-        Console.WriteLine("Num. Guesses: " + )    
+        Console.WriteLine("Num. Guesses: " + numGuesses);
+
+        // Start Match!
+        while (playerScore != 3 && cpuScore != 3){
+            // Any code ou wnat yo run BEFORE each round goes here.
+            // GENERATE SECRET NUMBER
+            Random rndNum =new Random();
+            secretNumber = rndNum.Next(rangeMin, rangeMax);
+            Console.WriteLine("Player Score: " + playerScore + "\n");
+            Console.WriteLine("CPU Score:" + cpuScore + "\n");
+            // Start Each Round
+            for (int i = 0; i < numGuesses ; i++) {
+                Console.WriteLine("You have used " + numAttempts + " this round .\n");
+                Console.WriteLine("You must guess between" + rangeMin + "and " + rangeMax + \n);
+                playerGuess = System.Convert.ToInt32(Console.ReadLine());
+                if (playerGuess == secretNumber) {
+                    Console.WriteLine("Your guess is too high!\n");   
+                } else {
+                    
+
+            }
+        }    
         
 
     }
