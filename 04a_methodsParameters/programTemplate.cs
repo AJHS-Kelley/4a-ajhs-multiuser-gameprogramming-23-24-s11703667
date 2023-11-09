@@ -43,6 +43,7 @@ namespace MethodsParameters
         {
             Console.WriteLine("My Favorite child is " + child3);
         }
+
         // Find Sum of Int
         static int FindSum(int x, int y)
         {
@@ -56,6 +57,7 @@ namespace MethodsParameters
         {
             double sum = x + y;
             Console.WriteLine("Sum: " + sum);
+            return sum;
         }
 
  
@@ -70,6 +72,14 @@ namespace MethodsParameters
         {
             // MyMethod();
             // DoubleUP();
+            //MakePancakes();
+            //MakeEggs(10, "sunny side up");
+            //MakeBurger();
+            //MakeBurger(10);
+            //AllMyChildren(child3: "Steve", child2: "Susan", child1 "Chewbacca");
+            FindSum(1,5); // TWO INTERGERS
+            FindSum(9.5, 2.4); // TWO DOUBLES
+            FindSum(5, 2.5); // ONE OF EACH
         }
     }
 }
