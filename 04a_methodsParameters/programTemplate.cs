@@ -39,11 +39,23 @@ namespace MethodsParameters
         } 
 
         // Named Arguments
+        static void AllMyChildren(string child1, string child2, string child3)
+        {
+            Console.WriteLine("My Favorite child is " + child3);
+        }
         // Find Sum of Int
         static int FindSum(int x, int y)
         {
             int sum = x + y;
-            Console.WriteLine()
+            Console.WriteLine("Sum: "+ sum);
+            return sum;
+        }
+
+        // Find Sum of Double
+        static double FindSum(int x, int y)
+        {
+            double sum = x + y;
+            Console.WriteLine("Sum: " + sum);
         }
 
  
